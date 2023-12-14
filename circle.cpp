@@ -17,7 +17,8 @@ int main()
     initgraph(&gd, &gm, ""); 
   
     // circle function 
-    circle(250, 200, 50); 
+    circle(250, 200, 100); 
+    circle(400,200,50);
     getch(); 
   
     // closegraph function closes the 
