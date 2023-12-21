@@ -4,7 +4,7 @@
  main()
 {
 	int gd=	DETECT,gm;
-	initgraph(&gd, &gm, "c:\\TURBOC3\\BGI");
+	initgraph(&gd, &gm, "c:\\DevC\\BGI");
 	line(10,10,500,10);
 	getch();
 	closegraph();
