@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<conio.h>
 #include<graphics.h>
- main()
+int main()
 {
 	int gd=	DETECT,gm;
-	initgraph(&gd, &gm, "c:\\DevC\\BGI");
+	initgraph(&gd, &gm, "c:\\DevC\\MinGW64");
 	line(10,10,500,10);
 	getch();
 	closegraph();

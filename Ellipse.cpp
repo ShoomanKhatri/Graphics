@@ -25,7 +25,10 @@ int main()
 	initgraph(&gd, &gm, ""); 
 
 	// ellipse function 
-	ellipse(x, y, start_angle, end_angle, x_rad, y_rad); 
+//	ellipse(x, y, start_angle, end_angle, x_rad, y_rad); 
+	
+	ellipse(250,200,0,360,100,50); 
+	
 
 	getch(); 
 

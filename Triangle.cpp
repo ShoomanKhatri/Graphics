@@ -4,7 +4,7 @@
 
 int main() {
     int gd = DETECT, gm;
-    initgraph(&gd, &gm, "c:\\Devc\\BGI");
+    initgraph(&gd, &gm, "c:\\Devc\\MinGW64");
 
     // Draw a triangle
     line(10, 10, 250, 400);   // Line from (10,10) to (250,400)
