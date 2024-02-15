@@ -4,19 +4,14 @@
 
 int main() {
     int gd = DETECT, gm;
-    double angle;
-    int x1, y1, x2, y2;
-
-    printf("Enter coordinates of line (x1 y1 x2 y2): ");
-    scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
-
-    printf("Enter rotation angle: ");
-    scanf("%lf", &angle);
+    double angle = 45.0; // Angle of rotation (in degrees)
+    int x1 = 100, y1 = 100; // Starting point of the line
+    int x2 = 300, y2 = 100; // Ending point of the line
 
     initgraph(&gd, &gm, "");
 
     setcolor(RED);
-    line(x1, y1, x2, y2);
+    line(x1, y1, x2, y2); // Original line
 
     // Convert angle to radians
     double radians = angle * M_PI / 180.0;
@@ -28,10 +23,12 @@ int main() {
     int y2_new = x2 * sin(radians) + y2 * cos(radians);
 
     setcolor(GREEN);
-    line(x1_new, y1_new, x2_new, y2_new);
+    line(x1_new, y1_new, x2_new, y2_new); // Rotated line
 
     getch();
     closegraph();
+
+
 
     return 0;
 }
