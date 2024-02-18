@@ -4,7 +4,7 @@
 
 int main() {
     int gd = DETECT, gm;
-    double angle = 45.0; // Angle of rotation (in degrees)
+    double angle = 60.0;     // Angle of rotation (in degrees)
     int x1 = 100, y1 = 100; // Starting point of the line
     int x2 = 300, y2 = 100; // Ending point of the line
 
